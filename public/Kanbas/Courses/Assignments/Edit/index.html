@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Edit</title>
+</head>
+<body>
+    <select id="Edit-Assignment">
+        <option>Edit</option>
+        <option selected>SpeedGrader</option>
+        <option>Duplicate</option>
+        <option>Delete</option>
+        <option>Move to...</option>
+        <option>Send To...</option>
+        <option>Copy To...</option>
+        <option>Share to Commons</option>
+    </select>
+    <hr>
+    <h3>
+        Assignment Name
+    </h3>
+    <input id="Assignment-Name"\>
+    <br/>
+    <br/>
+    <textarea>This is the assignment description.
+    </textarea>
+    <br/>
+    <br/>
+    <label for="points">Points </label> 
+    <br/>
+    <input id="points" value="100"/><br/>
+    <br/>
+    <label for="assignment-group">Assignment Group </label> 
+    <br/>
+    <select id="assignment-group">
+        <option>Assignments</option>
+    </select>
+    <br/>
+    <br/>
+    <label for="display-grade-as">Display Grade as</label> 
+    <br/>
+    <select id="display-grade-as">
+        <option>Percentage</option>
+    </select>
+    <br/>
+    <br/>
+    <label for="Submission-type">Submission Type</label> 
+    <br/>
+    <select id="Submission-type">
+        <option>Online</option>
+    </select>
+    <br/>
+    <br/>
+    <label for="Submission-type">Online Entry Options</label>
+    <br/>
+    <input type="checkbox" value="text-entry"
+      name="check-submission" id="chkbox-comedy"/>
+    <label for="chkbox-text-entry">Text Entry</label>
+    <br/>
+    <input type="checkbox" value="web-url"
+    name="check-submission" id="chkbox-web-url"/>
+    <label for="chkbox-web-url">Website URL</label>
+    <br/>
+    <input type="checkbox" value="media-recordings"
+    name="check-submission" id="chkbox-media-recordings"/>
+    <label for="chkbox-media-recordings">Media Recordings</label>
+    <br/>
+    <input type="checkbox" value="student-annotation"
+    name="check-submission" id="chkbox-student-annotation"/>
+    <label for="chkbox-student-annotation">Student Annotation</label>
+    <br/>
+    <input type="checkbox" value="file-upload"
+    name="check-submission" id="chkbox-file-upload"/>
+    <label for="chkbox-file-upload">File Uploads</label>
+    <br/>
+    <br/>
+    <label for="assign-to">Assign <br/>Assign to</label>
+    <br/>
+    <input type="text" value="Everyone"/>
+    <br/>
+    <br/>
+    <label for="date">Due</label>
+    <br/>
+    <input type="date" id="date"/>
+    <br/>
+    <br/>
+    <label for="available">Available from</label>
+    <br/>
+    <input type="date" id="available"/>
+    <br/>
+    <br/>
+    <label for="until">Until</label>
+    <br/>
+    <input type="date" id="until"/>
+    <br/>
+    <br/>
+    <button>
+        <a href="/public/Kanbas/Courses/Assignments/screen.html">
+            Cancel</a></button>
+    <button>
+        <a href="/public/Kanbas/Courses/Assignments/screen.html">
+            Save</a></button>
+</body>
+</html>
