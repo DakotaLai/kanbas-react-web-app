@@ -1,268 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/libs/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/screen.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css" />
+    <title>Assignment Screen</title>
 </head>
+
 <body>
-    <table width = "100%">
-        <tr style="vertical-align: top;">
-            <td>
-                <ul>
-                    <li>
-                        <a href="/Kanbas/Account/Profile/screen.html">Account</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Calendar/index.html">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Inbox/index.html">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>
-                        <a href="/Kanbas/Courses/Home/screen.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Piazza/index.html">Piazza</a>
-                    </li>
-                    <li>
-                        <a href="">Zoom Meetings</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
-                    </li>
-                    <li>
-                        <a href="">Quizzes</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
-                    </li>
-                    <li>
-                        <a href="">People</a>
-                    </li>
-                    <li>
-                        <a href="">Panopto Video</a>
-                    </li>
-                    <li>
-                        <a href="">Discussions</a>
-                    </li>
-                    <li>
-                        <a href="">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="">Pages</a>
-                    </li>
-                    <li>
-                        <a href="">Files</a>
-                    </li>
-                    <li>
-                        <a href="">Rubrics</a>
-                    </li>
-                    <li>
-                        <a href="">Outcomes</a>
-                    </li>
-                    <li>
-                        <a href="">Collaborations</a>
-                    </li>
-                    <li>
-                        <a href="">Syllabus</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a>
-                    </li>
-                </ul>
-            </td>
-            <td>
-              <input id="searchAssignment"
-              placeholder="Search for Assignments"/>
-          <button>Group</button>
-          <button>Assignments</button>
-          <select id="assignment-date">
-              <option>Edit Assignment Dates</option>
-           </select>
-           <hr color="grey">
-           <br/>
-           <!--Assignment section-->
-            <!--Edit selection bar-->
-          <h3> Assignments 40% of Total
-              <select id="Edit-Assignment">
-                  <option>Edit</option>
-                  <option>Speed Grader</option>
-                  <option>Duplicate</option>
-                  <option>Delete</option>
-                  <option>Move to...</option>
-                  <option>Send To...</option>
-                  <option>Copy To...</option>
-                  <option>Share to Commons</option>
-              </select>
-          </h3>
-          <!--Content-->
-          <ul>
-              <li>
-                      <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A1 - ENV+HTML</a>
-                      <br/>
-                      <a href="#">Multiple Modules</a>
-                      | Not available yet
-              </li>
-              <li>
-                      <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A2 - CSS+BOOTSTRAP</a>
-                      <br/>
-                      <a href="#">Multiple Modules</a>
-                      | Not available yet
-              </li>
-              <li>
-                      <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A3 - JS+REACT</a>
-                      <br/>
-                      <a href="#">Multiple Modules</a>
-                      | Not available yet
-              </li>
-              <li>
-                      <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A4 - STATE+REDUX</a>
-                      <br/>
-                      <a href="#">Multiple Modules</a>
-                      | Not available yet
-              </li>
-              <li>
-                      <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A5 - NODE+SESSION</a>
-                      <br/>
-                      <a href="#">Multiple Modules</a>
-                      | Not available yet
-              </li>
-              <li>
-                      <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A6 - MONGO+MONGOOSE</a>
-                      <br/>
-                      <a href="#">Multiple Modules</a>
-                      | Not available yet
-              </li>
-          
-          </ul>
-          <!--Quiz Section-->
-          <!--Edit selection bar-->
-          <h3> QUIZZES 10% of Total
-              <select id="Edit-Assignment">
-                  <option>Edit</option>
-                  <option>Speed Grader</option>
-                  <option>Duplicate</option>
-                  <option>Delete</option>
-                  <option>Move to...</option>
-                  <option>Send To...</option>
-                  <option>Copy To...</option>
-                  <option>Share to Commons</option>
-              </select>
-          </h3>
-          <!--Content-->
-          <ul>
-              <li>
-                      <a href="#">Q1 - HTML</a>
-                      <br/>
-                      <a href="#">Multiple Modules</a>
-                      | Not available yet
-              </li>
-              <li>
-                      <a href="#">Q2 - CSS</a>
-                      <br/>
-                      <a href="#">Multiple Modules</a>
-                      | Not available yet
-              </li>
-              <li>
-                      <a href="#">Q3 - JS,ES6 </a>
-                      <br/>
-                      <a href="#">Multiple Modules</a>
-                      | Not available yet
-              </li>
-              <li>
-                      <a href="#">Q4 - NODE</a>
-                      <br/>
-                      <a href="#">Multiple Modules</a>
-                      | Not available yet
-              </li>
-              <li>
-                      <a href="#">Q5 - MONGO</a>
-                      <br/>
-                      <a href="#">Multiple Modules</a>
-                      | Not available yet
-              </li>   
-          </ul>
-      
-          <!--Exam Section-->
-           <!--Edit selection bar-->
-          <h3> EXAMS 20% of Total
-              <select id="Edit-Assignment">
-                  <option>Edit</option>
-                  <option>Speed Grader</option>
-                  <option>Duplicate</option>
-                  <option>Delete</option>
-                  <option>Move to...</option>
-                  <option>Send To...</option>
-                  <option>Copy To...</option>
-                  <option>Share to Commons</option>
-              </select>
-          </h3>
-          <!--Content-->
-          <ul>
-              <li>
-                      <a href="#">Midterm</a>
-                      <br/>
-                      <a href="#">Multiple Modules</a>
-                      | Not available yet
-              </li>
-              <li>
-                      <a href="#">Final</a>
-                      <br/>
-                      <a href="#">Multiple Modules</a>
-                      | Not available yet
-              </li>
-          </ul>
-          <!--Project Section-->
-           <!--Edit selection bar-->
-          <h3> PROJECT 30% of Total
-              <select id="Edit-Assignment">
-                  <option>Edit</option>
-                  <option>Speed Grader</option>
-                  <option>Duplicate</option>
-                  <option>Delete</option>
-                  <option>Move to...</option>
-                  <option>Send To...</option>
-                  <option>Copy To...</option>
-                  <option>Share to Commons</option>
-              </select>
-          </h3>
-          <!--Content-->
-          <ul>
-              <li>
-                      <a href="#">Project</a>
-                      <br/>
-                      <a href="#">Multiple Modules</a>
-                      | Not available yet
-              </li>
-          </ul>
-            </td>       
-        </tr>
-    </table>
+    <div class="container-fluid">
+        <div class="row d-flex">
+            <div class="row row-cols-lg-2">
+                <!--navigation bar-->
+                <div class="d-none cols-lg-1 d-lg-block" style="margin: inherit;">
+                    <ul class="wd-kanbas-navigation">
+                        <li><a href="http://northeastern.edu">N</a></li>
+                        <li>
+                            <a href="/Kanbas/Account/Navigation/index.html">
+                                <i class="fa fa-user-circle" style="color:white"></i>
+                                Account</a>
+                        </li>
+                        <li>
+                            <a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-tachometer"></i>
+                                Dashboard</a>
+                        </li>
+                        <li class="wd-active">
+                            <a href="/Kanbas/Courses/Home/screen.html">
+                                <i class="fa fa-light fa-book"></i>
+                                Courses</a>
+                        </li>
+                        <li>
+                            <a href="/Kanbas/Calendar/index.html">
+                                <i class="fa fa-calendar"></i>Calendar</a>
+                        </li>
+                        <li>
+                            <a href="/Kanbas/Inbox/index.html"><i class="fa fa-inbox"></i></br>
+                                Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-clock-o"></i>History</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-tv"></i>Studio</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-share-square-o"></i>
+                                Commons</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-question-circle"></i> </br>
+                                Help</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cols-lg-11 flex-fill mt-5 mb-5">
+                    <!--breadcrumb-->
+                    <div class="breadcrumb">
+                        <header>
+                            <span class="title">
+                                <i class="fa fa-bars"></i>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp
+                                CS4550.12631.202310 >
+                            </span>
+                            Assignments
+                        </header>
+                    </div>
+                    <hr />
+                    <!--course search bar and main content-->
+                    <div style="display: flex;" class="row row-cols-lg-3">
+                        <!--course search bar-->
+                        <div class="d-none d-lg-block cols-lg-1">
+                            <ul class="wd-navigation">
+                                <li>
+                                    <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+                                </li>
+                                <li><a href="http://piazza.com">Piazza</a></li>
+                                <li><a href="#">Zoom</a></li>
+                                <li class="wd-active">
+                                    <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                                </li>
+                                <li><a href="#">Quizzes</a></li>
+                                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                                <li><a href="#">People</a></li>
+                            </ul>
+                        </div>
+                        <!--Main content-->
+                        <div class="flex-fill cols-lg-11">
+                            <!--Header buttons-->
+                            <div class="mb-3 mt-5 me-3" style="display: flex;">
+                                <input id="searchAssignment" class="form-control w-25"
+                                    placeholder="Search for Assignments" />
+                                <div style="margin-left: auto;">
+                                    <button style="margin: 2px;">
+                                        <i class="fa fa-plus"></i>
+                                        Group</button>
+                                    <button style="background-color: red; color: white; margin: 2px;">
+                                        <i class="fa fa-plus"></i>
+                                        Assignments</button>
+                                    <select id="assignment-date" class="fa header-dropdown">
+                                        <option selected disabled>&#xf142;</option>
+                                        <option>Edit Assignment Dates</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr color="grey">
+                            <!--Assignment section-->
+                            <div class="mt-5">
+                                <ul class="list-group wd-module">
+                                    <!--Edit selection bar-->
+                                    <li class="list-group-item wd-week">
+                                        <div style="display: flex;">
+                                            <span class="flex-item-list">
+                                                <i class="fa fa-ellipsis-v fa-lg"></i>
+                                                &nbsp;&nbsp;
+                                                <span style="font-size: 25px;">Assignments</span>
+                                            </span>
+                                            <span class="flex-item-list" style="margin-left: auto; margin-right: 0%">
+                                                <span style="border: 1px solid black; padding: 5px;"
+                                                    class="rounded me-3">
+                                                    40% of Total
+                                                </span>
+                                                <span class="me-3">
+                                                    <i class="fa fa-plus"></i>
+                                                </span>
+                                                <span>
+                                                    <select id="Edit-Assignment" class="fa">
+                                                        <option selected disabled>&#xf142;</option>
+                                                        <option>Edit</option>
+                                                        <option>Speed Grader</option>
+                                                        <option>Duplicate</option>
+                                                        <option>Delete</option>
+                                                        <option>Move to...</option>
+                                                        <option>Send To...</option>
+                                                        <option>Copy To...</option>
+                                                        <option>Share to Commons</option>
+                                                    </select>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <!--Content-->
+                                    <div style="border-left: 10px solid green;">
+                                        <li class="list-group-item">
+                                            <div style="display: flex">
+                                                <span class="flex-item-list">
+                                                    <i class="fa fa-ellipsis-v fa-lg"></i>
+                                                </span>
+                                                <span class="flex-item-list">
+                                                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html"> <b>A1
+                                                            - ENV+HTML</b></a>
+                                                    <br />
+                                                    <a href="#">Multiple Modules</a>
+                                                    <br />
+                                                    Not available yet
+                                                </span>
+                                                <span class="flex-item-list">
+                                                    |
+                                                </span>
+                                                <span style="margin-left: auto;" class="flex-item-list">
+                                                    <i class="fa fa-check-circle text-success me-4"></i>
+                                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div style="display: flex">
+                                                <span class="flex-item-list">
+                                                    <i class="fa fa-ellipsis-v fa-lg"></i>
+                                                </span>
+                                                <span class="flex-item-list">
+                                                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><b>A2
+                                                            - CSS+BOOTSTRAP</b></a>
+                                                    <br />
+                                                    <a href="#">Multiple Modules</a>
+                                                    <br />
+                                                    Not available yet
+                                                </span>
+                                                <span class="flex-item-list">
+                                                    |
+                                                </span>
+                                                <span style="margin-left: auto;" class="flex-item-list">
+                                                    <i class="fa fa-check-circle text-success me-4"></i>
+                                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div style="display: flex">
+                                                <span class="flex-item-list">
+                                                    <i class="fa fa-ellipsis-v fa-lg"></i>
+                                                </span>
+                                                <span class="flex-item-list">
+                                                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><b>A3
+                                                            - JS+REACT</b></a>
+                                                    <br />
+                                                    <a href="#">Multiple Modules</a>
+                                                    <br />
+                                                    Not available yet
+                                                </span>
+                                                <span class="flex-item-list">
+                                                    |
+                                                </span>
+                                                <span style="margin-left: auto;" class="flex-item-list">
+                                                    <i class="fa fa-check-circle text-success me-4"></i>
+                                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div style="display: flex">
+                                                <span class="flex-item-list">
+                                                    <i class="fa fa-ellipsis-v fa-lg"></i>
+                                                </span>
+                                                <span class="flex-item-list">
+                                                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><b>A4
+                                                            - STATE+REDUX </b></a>
+                                                    <br />
+                                                    <a href="#">Multiple Modules</a>
+                                                    <br />
+                                                    Not available yet
+                                                </span>
+                                                <span class="flex-item-list">
+                                                    |
+                                                </span>
+                                                <span style="margin-left: auto;" class="flex-item-list">
+                                                    <i class="fa fa-check-circle text-success me-4"></i>
+                                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div style="display: flex">
+                                                <span class="flex-item-list">
+                                                    <i class="fa fa-ellipsis-v fa-lg"></i>
+                                                </span>
+                                                <span class="flex-item-list">
+                                                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><b>A5
+                                                            - NODE+SESSION</b></a>
+                                                    <br />
+                                                    <a href="#">Multiple Modules</a>
+                                                    <br />
+                                                    Not available yet
+                                                </span>
+                                                <span class="flex-item-list">
+                                                    |
+                                                </span>
+                                                <span style="margin-left: auto;" class="flex-item-list">
+                                                    <i class="fa fa-check-circle text-success me-4"></i>
+                                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div style="display: flex">
+                                                <span class="flex-item-list">
+                                                    <i class="fa fa-ellipsis-v fa-lg"></i>
+                                                </span>
+                                                <span class="flex-item-list">
+                                                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><b>A6
+                                                            - MONGO+MONGOOSE</b></a>
+                                                    <br />
+                                                    <a href="#">Multiple Modules</a>
+                                                    <br />
+                                                    Not available yet
+                                                </span>
+                                                <span class="flex-item-list">
+                                                    |
+                                                </span>
+                                                <span style="margin-left: auto;" class="flex-item-list">
+                                                    <i class="fa fa-check-circle text-success me-4"></i>
+                                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </div>
+
+                                </ul>
+                            </div>
+                            <!--Quiz Section-->
+                            <ul class="list-group mt-5 wd-module">
+                                <!--Edit selection bar-->
+                                <li class="list-group-item wd-week">
+                                    <div style="display: flex;">
+                                        <span class="flex-item-list">
+                                            <i class="fa fa-ellipsis-v fa-lg"></i>
+                                            &nbsp;&nbsp;
+                                            <span style="font-size: 25px;">Quizzes</span>
+                                        </span>
+                                        <span class="flex-item-list" style="margin-left: auto; margin-right: 0%">
+                                            <span style="border: 1px solid black; padding: 5px;" class="rounded me-3">
+                                                10% of Total
+                                            </span>
+                                            <span class="me-3"><i class="fa fa-plus"></i></span>
+                                            <span>
+                                                <select id="Edit-Assignment" class="fa">
+                                                    <option selected disabled>&#xf142;</option>
+                                                    <option>Edit</option>
+                                                    <option>Speed Grader</option>
+                                                    <option>Duplicate</option>
+                                                    <option>Delete</option>
+                                                    <option>Move to...</option>
+                                                    <option>Send To...</option>
+                                                    <option>Copy To...</option>
+                                                    <option>Share to Commons</option>
+                                                </select>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!--Content-->
+                                <div style="border-left: 10px solid green;">
+                                    <li class="list-group-item">
+                                        <div style="display: flex">
+                                            <span class="flex-item-list">
+                                                <i class="fa fa-ellipsis-v fa-lg"></i>
+                                            </span>
+                                            <span class="flex-item-list">
+                                                <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><b>Q1 -
+                                                        HTML</b></a>
+                                                <br />
+                                                <a href="#">Multiple Modules</a>
+                                                <br />
+                                                Not available yet
+                                            </span>
+                                            <span class="flex-item-list">
+                                                |
+                                            </span>
+                                            <span style="margin-left: auto;" class="flex-item-list">
+                                                <i class="fa fa-check-circle text-success me-4"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div style="display: flex">
+                                            <span class="flex-item-list">
+                                                <i class="fa fa-ellipsis-v fa-lg"></i>
+                                            </span>
+                                            <span class="flex-item-list">
+                                                <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><b>Q2 -
+                                                        CSS</b></a>
+                                                <br />
+                                                <a href="#">Multiple Modules</a>
+                                                <br />
+                                                Not available yet
+                                            </span>
+                                            <span class="flex-item-list">
+                                                |
+                                            </span>
+                                            <span style="margin-left: auto;" class="flex-item-list">
+                                                <i class="fa fa-check-circle text-success me-4"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div style="display: flex">
+                                            <span class="flex-item-list">
+                                                <i class="fa fa-ellipsis-v fa-lg"></i>
+                                            </span>
+                                            <span class="flex-item-list">
+                                                <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><b>Q3 -
+                                                        JS,ES6 </b></a>
+                                                <br />
+                                                <a href="#">Multiple Modules</a>
+                                                <br />
+                                                Not available yet
+                                            </span>
+                                            <span class="flex-item-list">
+                                                |
+                                            </span>
+                                            <span style="margin-left: auto;" class="flex-item-list">
+                                                <i class="fa fa-check-circle text-success me-4"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div style="display: flex">
+                                            <span class="flex-item-list">
+                                                <i class="fa fa-ellipsis-v fa-lg"></i>
+                                            </span>
+                                            <span class="flex-item-list">
+                                                <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><b>Q4 -
+                                                        NODE</b></a>
+                                                <br />
+                                                <a href="#">Multiple Modules</a>
+                                                <br />
+                                                Not available yet
+                                            </span>
+                                            <span class="flex-item-list">
+                                                |
+                                            </span>
+                                            <span style="margin-left: auto;" class="flex-item-list">
+                                                <i class="fa fa-check-circle text-success me-4"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div style="display: flex">
+                                            <span class="flex-item-list">
+                                                <i class="fa fa-ellipsis-v fa-lg"></i>
+                                            </span>
+                                            <span class="flex-item-list">
+                                                <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><b>Q5 -
+                                                        MONGO</b></a>
+                                                <br />
+                                                <a href="#">Multiple Modules</a>
+                                                <br />
+                                                Not available yet
+                                            </span>
+                                            <span class="flex-item-list">
+                                                |
+                                            </span>
+                                            <span style="margin-left: auto;" class="flex-item-list">
+                                                <i class="fa fa-check-circle text-success me-4"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+
+                            <!--Exam Section-->
+                            <ul class="list-group mt-5 wd-module">
+                                <!--Edit selection bar-->
+                                <li class="list-group-item wd-week">
+                                    <div style="display: flex;">
+                                        <span class="flex-item-list">
+                                            <i class="fa fa-ellipsis-v fa-lg"></i>
+                                            &nbsp;&nbsp;
+                                            <span style="font-size: 25px;">Exams</span>
+                                        </span>
+                                        <span class="flex-item-list" style="margin-left: auto; margin-right: 0%">
+                                            <span style="border: 1px solid black; padding: 5px;" class="rounded me-3">
+                                                20% of Total
+                                            </span>
+                                            <span class="me-3"><i class="fa fa-plus"></i></span>
+                                            <span>
+                                                <select id="Edit-Assignment" class="fa">
+                                                    <option selected disabled>&#xf142;</option>
+                                                    <option>Edit</option>
+                                                    <option>Speed Grader</option>
+                                                    <option>Duplicate</option>
+                                                    <option>Delete</option>
+                                                    <option>Move to...</option>
+                                                    <option>Send To...</option>
+                                                    <option>Copy To...</option>
+                                                    <option>Share to Commons</option>
+                                                </select>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!--Content-->
+                                <div style="border-left: 10px solid green;">
+                                    <li class="list-group-item">
+                                        <div style="display: flex">
+                                            <span class="flex-item-list">
+                                                <i class="fa fa-ellipsis-v fa-lg"></i>
+                                            </span>
+                                            <span class="flex-item-list">
+                                                <a
+                                                    href="/Kanbas/Courses/Assignments/Edit/screen.html"><b>Midterm</b></a>
+                                                <br />
+                                                <a href="#">Multiple Modules</a>
+                                                <br />
+                                                Not available yet
+                                            </span>
+                                            <span class="flex-item-list">
+                                                |
+                                            </span>
+                                            <span style="margin-left: auto;" class="flex-item-list">
+                                                <i class="fa fa-check-circle text-success me-4"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div style="display: flex">
+                                            <span class="flex-item-list">
+                                                <i class="fa fa-ellipsis-v fa-lg"></i>
+                                            </span>
+                                            <span class="flex-item-list">
+                                                <a
+                                                    href="/Kanbas/Courses/Assignments/Edit/screen.html"><b>Final</b></a>
+                                                <br />
+                                                <a href="#">Multiple Modules</a>
+                                                <br />
+                                                Not available yet
+                                            </span>
+                                            <span class="flex-item-list">
+                                                |
+                                            </span>
+                                            <span style="margin-left: auto;" class="flex-item-list">
+                                                <i class="fa fa-check-circle text-success me-4"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+
+                            <!--Project Section-->
+                            <ul class="list-group mt-5 wd-module">
+                                <!--Edit selection bar-->
+                                <li class="list-group-item wd-week">
+                                    <div style="display: flex;">
+                                        <span class="flex-item-list">
+                                            <i class="fa fa-ellipsis-v fa-lg"></i>
+                                            &nbsp;&nbsp;
+                                            <span style="font-size: 25px;">Projects</span>
+                                        </span>
+                                        <span class="flex-item-list" style="margin-left: auto; margin-right: 0%">
+                                            <span style="border: 1px solid black; padding: 5px;" class="rounded me-3">
+                                                30% of Total
+                                            </span>
+                                            <span class="me-3"><i class="fa fa-plus"></i></span>
+                                            <span>
+                                                <select id="Edit-Assignment" class="fa">
+                                                    <option selected disabled>&#xf142;</option>
+                                                    <option>Edit</option>
+                                                    <option>Speed Grader</option>
+                                                    <option>Duplicate</option>
+                                                    <option>Delete</option>
+                                                    <option>Move to...</option>
+                                                    <option>Send To...</option>
+                                                    <option>Copy To...</option>
+                                                    <option>Share to Commons</option>
+                                                </select>
+                                            </span></span>
+                                    </div>
+                                </li>
+                                <!--Content-->
+                                <div style="border-left: 10px solid green;">
+                                    <li class="list-group-item">
+                                        <div style="display: flex">
+                                            <span class="flex-item-list">
+                                                <i class="fa fa-ellipsis-v fa-lg"></i>
+                                            </span>
+                                            <span class="flex-item-list">
+                                                <a
+                                                    href="/Kanbas/Courses/Assignments/Edit/screen.html"><b>Project</b></a>
+                                                <br />
+                                                <a href="#">Multiple Modules</a>
+                                                <br />
+                                                Not available yet
+                                            </span>
+                                            <span class="flex-item-list">
+                                                |
+                                            </span>
+                                            <span style="margin-left: auto;" class="flex-item-list">
+                                                <i class="fa fa-check-circle text-success me-4"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
+
 </html>

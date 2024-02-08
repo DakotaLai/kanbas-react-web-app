@@ -1,717 +1,637 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/libs/bootstrap.min.css" />
+  <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Grades/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+  <link rel="stylesheet" href="/Kanbas/styles.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Home/screen.css" />
+  <title>Grade screen</title>
 </head>
+
 <body>
-    <table width="100%">
-        <tr style="vertical-align: top;">
-            <td>
-                <ul>
-                    <li>
-                        <a href="/Kanbas/Account/Profile/screen.html">Account</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Calendar/index.html">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Inbox/index.html">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>
-                        <a href="/Kanbas/Courses/Home/screen.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Piazza/index.html">Piazza</a>
-                    </li>
-                    <li>
-                        <a href="">Zoom Meetings</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
-                    </li>
-                    <li>
-                        <a href="">Quizzes</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
-                    </li>
-                    <li>
-                        <a href="">People</a>
-                    </li>
-                    <li>
-                        <a href="">Panopto Video</a>
-                    </li>
-                    <li>
-                        <a href="">Discussions</a>
-                    </li>
-                    <li>
-                        <a href="">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="">Pages</a>
-                    </li>
-                    <li>
-                        <a href="">Files</a>
-                    </li>
-                    <li>
-                        <a href="">Rubrics</a>
-                    </li>
-                    <li>
-                        <a href="">Outcomes</a>
-                    </li>
-                    <li>
-                        <a href="">Collaborations</a>
-                    </li>
-                    <li>
-                        <a href="">Syllabus</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a>
-                    </li>
-                </ul>
-            </td>
-            <td>
-    <select id="select-gradebook">
-        <option value="gradebook">Gradebook</option>
-     </select>
-    <button>Import</button>
-    <select id="select-export">
-        <option value="gradebook">Export</option>
-     </select>
-    <button>Configure</button>
-    <h4>Student Names</h4>
-    <form id="text-fields">
-    <input id="text-fields-studentNames"
-            placeholder="Search Students"/><br/>
-    </form>
-    <h4>Assignment Names</h4>
-    <form id="text-fields">
-    <input id="text-fields-AssignmentNames"
-            placeholder="Search Assignments"/><br/>
-    </form> 
-    <br/>
-    <button>Apply Filters</button> <br/>
-    <br/>
-    <table border="1" width = "100%">
-        <tr>
-          <th>Student Name</th>
-          <th>A1 SETUP <br/>Out of 100</th>
-          <th>A2 HTML <br/>Out of 100</th>
-          <th>A3 CSS <br/>Out of 100</th>
-          <th>A4 BOOTSTRAP <br/>Out of 100</th>
-          <th>A5 JAVASCRIPT <br/>Out of 100</th>
-          <th>A6 REACT <br/>Out of 100</th>
-          <th>A7 REDUX <br/>Out of 100</th>
-          <th>A8 NODE <br/>Out of 100</th>
-          <th>A9 MONGO <br/>Out of 100</th>
-        </tr>
-        <tr>
-          <td>Alice Wonderland</td>
-          <td> 
-            <input type="number" id="grade"
-            min = "0" max="100" value="98" 
-            style="text-align: right; display: block; margin: auto; border: 0"/>
-          </td>
-          <td> 
-            <input type="number" id="grade"
-            min = "0" max="100" value="89" 
-            style="text-align: right; display: block; margin: auto; border: 0"/>
-          </td>
-          <td> 
-            <input type="number" id="grade"
-            min = "0" max="100" value="87" 
-            style="text-align: right; display: block; margin: auto; border: 0"/>
-          </td>
-          <td> 
-            <input type="number" id="grade"
-            min = "0" max="100" value="90" 
-            style="text-align: right; display: block; margin: auto; border: 0"/>
-          </td>
-          <td> 
-            <input type="number" id="grade"
-            min = "0" max="100" value="89" 
-            style="text-align: right; display: block; margin: auto; border: 0"/>
-          </td>
-          <td> 
-            <input type="number" id="grade"
-            min = "0" max="100" value="94" 
-            style="text-align: right; display: block; margin: auto; border: 0"/>
-          </td>
-          <td> 
-            <input type="number" id="grade"
-            min = "0" max="100" value="88" 
-            style="text-align: right; display: block; margin: auto; border: 0"/>
-          </td>
-          <td> 
-            <input type="number" id="grade"
-            min = "0" max="100" value="87" 
-            style="text-align: right; display: block; margin: auto; border: 0"/>
-          </td>
-          <td> 
-            <input type="number" id="grade"
-            min = "0" max="100" value="100" 
-            style="text-align: right; display: block; margin: auto; border: 0"/>
-          </td>
-        </tr>
-        <tr>
-            <td>Prince Leia</td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="100" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="80" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="87" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="86" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="100" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="94" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="85" 
-              style="text-align: right; display: block; margin: auto; border: 1"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="84" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="92" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-        </tr>
-        <tr>
-            <td>Luke Skywalker</td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="99" 
-              style="text-align: right; display: block; margin: auto; border: 1"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="88" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="97" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="82" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="96" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="93" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="95" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="100" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="93" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-        </tr>
-        <tr>
-            <td>Han Solo</td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="83" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="99" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="94" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="98" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="86" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="85" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="86" 
-              style="text-align: right; display: block; margin: auto; border: 1"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="80" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="84" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-        </tr>
-        <tr>
-            <td>Lando Calresian</td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="83" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="92" 
-              style="text-align: right; display: block; margin: auto; border: 1"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="80" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="80" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="92" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="92" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="94" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="87" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="95" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-        </tr>
-        </tr>
-        <tr>
-            <td>Boba Fet</td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="85" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="89" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="94" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="83" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="83" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="84" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="91" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="87" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="96" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-        </tr>
-        <tr>
-            <td>Darth Vader</td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="81" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="81" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="96" 
-              style="text-align: right; display: block; margin: auto; border: 1"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="80" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="89" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="88" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="82" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="80" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="82" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-        </tr>
-        <tr>
-            <td>Obi-Wan Kenobi</td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="85" 
-              style="text-align: right; display: block; margin: auto; border: 1"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="99" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="87" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="82" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="88" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="83" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="88" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="92" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="80" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-        </tr>
-        <tr>
-            <td>R2-D2</td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="81" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="92" 
-              style="text-align: right; display: block; margin: auto; border: 1"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="82" 
-              style="text-align: right; display: block; margin: auto; border: 1"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="86" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="83" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="84" 
-              style="text-align: right; display: block; margin: auto; border: 1"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="98" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="85" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="96" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-        </tr>
-        <tr>
-            <td>C-3PO</td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="94" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="98" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="83" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="83" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="100" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="96" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="96" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="85" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="87" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-        </tr>
-        <tr>
-            <td>Yoda</td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="80" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value=89"" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="99" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="89" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="96" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="85" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="96" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="92" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="85" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-        </tr>
-        <tr>
-            <td>Admiral Ackbar</td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="82" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="88" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="95" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="100" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="93" 
-              style="text-align: right; display: block; margin: auto; border: 1"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="98" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="85" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="87" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-            <td> 
-              <input type="number" id="grade"
-              min = "0" max="100" value="99" 
-              style="text-align: right; display: block; margin: auto; border: 0"/>
-            </td>
-        </tr>
-    </table>
-            </td>
-        </tr>
-    </table>
+  <div class="container-fluid">
+    <div class="row d-flex">
+      <div class="row row-cols-lg-2">
+        <!--Navigation bar-->
+        <div class="d-none cols-lg-1 d-lg-block" style="margin: inherit;">
+          <ul class="wd-kanbas-navigation">
+            <li><a href="http://northeastern.edu">N</a></li>
+            <li>
+              <a href="/Kanbas/Account/Navigation/index.html">
+                <i class="fa fa-user-circle" style="color:white"></i>
+                Account</a>
+            </li>
+            <li>
+              <a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-tachometer"></i> Dashboard</a>
+            </li>
+            <li class="wd-active">
+              <a href="/Kanbas/Courses/Home/screen.html">
+                <i class="fa fa-light fa-book"></i>
+                Courses</a>
+            </li>
+            <li>
+              <a href="/Kanbas/Calendar/index.html">
+                <i class="fa fa-calendar"></i>Calendar</a>
+            </li>
+            <li>
+              <a href="/Kanbas/Inbox/index.html"><i class="fa fa-inbox"></i></br>
+                Inbox</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-clock-o"></i>History</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-tv"></i>Studio</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-share-square-o"></i>
+                Commons</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-question-circle"></i> </br>
+                Help</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cols-lg-11 flex-fill mt-5 mb-5">
+          <!--breadcrumb-->
+          <div class="breadcrumb">
+            <header>
+              <span class="title">
+                <i class="fa fa-bars"></i>
+                &nbsp&nbsp&nbsp&nbsp&nbsp
+                CS4550.12631.202310&nbsp&nbsp
+              </span>
+              >&nbsp&nbspGrades
+            </header>
+          </div>
+          <hr />
+          <!--course navigation bar and main content-->
+          <div style="display: flex;" class="row row-cols-lg-3">
+            <!--course navigation-->
+            <div class="d-none d-lg-block cols-lg-1">
+              <ul class="wd-navigation">
+                <li>
+                  <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+                </li>
+                <li>
+                  <a href="/Kanbas/Courses/Home/screen.html">Modules</a>
+                </li>
+                <li><a href="http://piazza.com">Piazza</a></li>
+                <li><a href="#">Zoom</a></li>
+                <li>
+                  <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                </li>
+                <li><a href="#">Quizzes</a></li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+              </ul>
+            </div>
+            <!--main content-->
+            <div class="flex-fill cols-lg-11">
+              <!--Top buttons-->
+              <div style="display: flex;" class="mb-3">
+                <div style="margin-left: auto;">
+                  <select id="select-gradebook" class="wd-buttons fa me-2">
+                    <option value="gradebook">Gradebook &#xf0d7;</option>
+                  </select>
+                  <button class="me-2"> <i class="fa fa-arrow-circle-right"></i>
+                    Import
+                  </button>
+                  <select id="select-export" class="wd-buttons fa me-2">
+                    <option value="gradebook"> &#xf0a8; Export &#xf0d7; </option>
+                  </select>
+                  <button class="me-2"><i class="fa fa-gear"></i></button>
+                </div>
+              </div>
+              <!--Search function-->
+              <div class="row row-cols-sm-12 mb-4">
+                <div class="col-sm-6">
+                  <h5>Student Names</h5>
+                  <form id="text-fields" class="form-select">
+                    <i class="fa fa-search"></i>
+                    <input id="text-fields-studentNames" placeholder="Search Students"
+                      style="border: transparent; width: fit-content;" />
+                  </form>
+                </div>
+                <div class="col-sm-6">
+                  <h5>Assignment Names</h5>
+                  <form id="text-fields" class="form-select">
+                    <i class="fa fa-search"></i>
+                    <input id="text-fields-assignments" placeholder="Search Assignments"
+                      style="border: transparent; width: fit-content;" />
+                  </form>
+                </div>
+              </div>
+
+              <!--Apply Filters-->
+              <div class="mb-4">
+                <button>
+                  <i class="fa fa-filter"></i>
+                  Apply Filters</button>
+              </div>
+
+              <!--table-->
+              <table class="table table-bordered table-striped">
+                <tbody>
+                  <tr>
+                    <th>Student Name</th>
+                    <td>A1 SETUP <br />Out of 100</td>
+                    <td>A2 HTML <br />Out of 100</td>
+                    <td>A3 CSS <br />Out of 100</td>
+                    <td>A4 BOOTSTRAP <br />Out of 100</td>
+                    <td>A5 JAVASCRIPT <br />Out of 100</td>
+                    <td>A6 REACT <br />Out of 100</td>
+                    <td>A7 REDUX <br />Out of 100</td>
+                    <td>A8 NODE <br />Out of 100</td>
+                    <td>A9 MONGO <br />Out of 100</td>
+                  </tr>
+                  <tr>
+                    <td>Alice Wonderland</td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="98"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="89"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="87"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="90"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="89"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="94"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="88"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="87"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="100"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Prince Leia</td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="100"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="80"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="87"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="86"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="100"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="94"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="85"
+                        style="text-align: right; display: block; margin: auto; border: 1" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="84"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="92"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Luke Skywalker</td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="99"
+                        style="text-align: right; display: block; margin: auto; border: 1" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="88"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="97"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="82"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="96"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="93"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="95"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="100"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="93"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Han Solo</td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="83"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="99"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="94"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="98"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="86"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="85"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="86"
+                        style="text-align: right; display: block; margin: auto; border: 1" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="80"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="84"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Lando Calresian</td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="83"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="92"
+                        style="text-align: right; display: block; margin: auto; border: 1" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="80"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="80"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="92"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="92"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="94"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="87"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="95"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>Boba Fet</td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="85"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="89"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="94"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="83"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="83"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="84"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="91"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="87"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="96"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Darth Vader</td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="81"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="81"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="96"
+                        style="text-align: right; display: block; margin: auto; border: 1" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="80"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="89"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="88"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="82"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="80"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="82"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obi-Wan Kenobi</td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="85"
+                        style="text-align: right; display: block; margin: auto; border: 1" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="99"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="87"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="82"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="88"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="83"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="88"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="92"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="80"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>R2-D2</td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="81"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="92"
+                        style="text-align: right; display: block; margin: auto; border: 1" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="82"
+                        style="text-align: right; display: block; margin: auto; border: 1" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="86"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="83"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="84"
+                        style="text-align: right; display: block; margin: auto; border: 1" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="98"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="85"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="96"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>C-3PO</td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="94"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="98"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="83"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="83"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="100"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="96"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="96"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="85"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="87"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Yoda</td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="80"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value=89""
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="99"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="89"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="96"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="85"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="96"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="92"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="85"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Admiral Ackbar</td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="82"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="88"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="95"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="100"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="93"
+                        style="text-align: right; display: block; margin: auto; border: 1" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="98"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="85"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="87"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                    <td>
+                      <input type="number" id="grade" min="0" max="100" value="99"
+                        style="text-align: right; display: block; margin: auto; border: 0" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

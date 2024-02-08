@@ -1,0 +1,47 @@
+.wd-module {
+    border-radius: 0%;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+.flex-item-list {
+    text-align: left; 
+    margin-top: auto; 
+    margin-bottom: auto;
+    margin-right: 5%;
+}
+span a {
+    text-decoration: none;
+    color: black;
+}
+ul .wd-week {
+    background-color: lightgray;
+    border: 1px solid gray !important;
+    border-left: none !important;
+}
+.header-dropdown {
+    background-color: transparent;
+    border: 10px solid #f5f5f5;
+    padding: 1px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 30px;
+    box-shadow: 0 0 1px 1px #e1dfdf;
+    background-color: #f5f5f5;
+    text-align: center;
+    margin: 2px;
+}
+
+#Edit-Assignment {
+    background-color: lightgray; 
+    border: 0;     
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    line-height: 20px;
+}
+
+.wd-buttons:hover {
+    background: #e8e8e8;
+    color: black;
+}

@@ -1,105 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/public/Kanbas/Courses/Assignments/Edit/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/public/libs/font-awesome/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="/public/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/public/libs/bootstrap.min.css" />
     <title>Assignment Edit</title>
-</head>
-<body>
-    <select id="Edit-Assignment">
-        <option>Edit</option>
-        <option selected>SpeedGrader</option>
-        <option>Duplicate</option>
-        <option>Delete</option>
-        <option>Move to...</option>
-        <option>Send To...</option>
-        <option>Copy To...</option>
-        <option>Share to Commons</option>
-    </select>
-    <hr>
-    <h3>
-        Assignment Name
-    </h3>
-    <input id="Assignment-Name"\>
-    <br/>
-    <br/>
-    <textarea>This is the assignment description.
-    </textarea>
-    <br/>
-    <br/>
-    <label for="points">Points </label> 
-    <br/>
-    <input id="points" value="100"/><br/>
-    <br/>
-    <label for="assignment-group">Assignment Group </label> 
-    <br/>
-    <select id="assignment-group">
-        <option>Assignments</option>
-    </select>
-    <br/>
-    <br/>
-    <label for="display-grade-as">Display Grade as</label> 
-    <br/>
-    <select id="display-grade-as">
-        <option>Percentage</option>
-    </select>
-    <br/>
-    <br/>
-    <label for="Submission-type">Submission Type</label> 
-    <br/>
-    <select id="Submission-type">
-        <option>Online</option>
-    </select>
-    <br/>
-    <br/>
-    <label for="Submission-type">Online Entry Options</label>
-    <br/>
-    <input type="checkbox" value="text-entry"
-      name="check-submission" id="chkbox-comedy"/>
-    <label for="chkbox-text-entry">Text Entry</label>
-    <br/>
-    <input type="checkbox" value="web-url"
-    name="check-submission" id="chkbox-web-url"/>
-    <label for="chkbox-web-url">Website URL</label>
-    <br/>
-    <input type="checkbox" value="media-recordings"
-    name="check-submission" id="chkbox-media-recordings"/>
-    <label for="chkbox-media-recordings">Media Recordings</label>
-    <br/>
-    <input type="checkbox" value="student-annotation"
-    name="check-submission" id="chkbox-student-annotation"/>
-    <label for="chkbox-student-annotation">Student Annotation</label>
-    <br/>
-    <input type="checkbox" value="file-upload"
-    name="check-submission" id="chkbox-file-upload"/>
-    <label for="chkbox-file-upload">File Uploads</label>
-    <br/>
-    <br/>
-    <label for="assign-to">Assign <br/>Assign to</label>
-    <br/>
-    <input type="text" value="Everyone"/>
-    <br/>
-    <br/>
-    <label for="date">Due</label>
-    <br/>
-    <input type="date" id="date"/>
-    <br/>
-    <br/>
-    <label for="available">Available from</label>
-    <br/>
-    <input type="date" id="available"/>
-    <br/>
-    <br/>
-    <label for="until">Until</label>
-    <br/>
-    <input type="date" id="until"/>
-    <br/>
-    <br/>
-    <button>
-        <a href="/public/Kanbas/Courses/Assignments/screen.html">
-            Cancel</a></button>
-    <button>
-        <a href="/public/Kanbas/Courses/Assignments/screen.html">
-            Save</a></button>
-</body>
+  </head>
+
+  <body>
+    <!--header-->
+    <div class="mb-3 mt-5 me-4" style="display: flex;">
+      <div style="margin-left: auto;">
+        <i class="fa fa-check-circle text-success"></i>
+        <span style="color: green;" class="me-4"><b>Published</b></span>
+          <select id="Edit-Assignment" class="fa header-dropdown">
+            <option selected disabled>&#xf142;</option>
+            <option>Edit</option>
+            <option>SpeedGrader</option>
+            <option>Duplicate</option>
+            <option>Delete</option>
+            <option>Move to...</option>
+            <option>Send To...</option>
+            <option>Copy To...</option>
+            <option>Share to Commons</option>
+          </select>
+      </div>
+    </div>
+    <hr />
+    <!--Assignment Name-->
+    <div class="mb-4">
+        <h5 class="mt-5">Assignment Name</h5>
+    <input id="Assignment-Name" class="form-control flex-fill" />
+    </div>
+    <!--Assignment descriptions-->
+    <div class="mb-4">
+        <textarea class="form-control" id="assignment-description">This is the assignment description.
+        </textarea>
+    </div>
+    <!--centered forms-->
+    <div class="container-sm mb-4">
+      <div class="row row-cols-sm-12">
+        <!--Points-->
+        <div class="col-sm-3">
+          <label for="points">Points </label>
+        </div>
+        <div class="col-sm-9">
+          <input id="points" value="100" class="form-control" />
+        </div>
+
+        <!--Assignment Group-->
+        <div class="mb-4"></div>
+        <div class="col-sm-3">
+          <label for="assignment-group">Assignment Group </label>
+        </div>
+        <div class="col-sm-9">
+          <select id="assignment-group" class="form-select">
+            <option>Assignments</option>
+          </select>
+        </div>
+
+        <!--Display Grade as-->
+        <div class="mb-4"></div>
+        <div class="col-sm-3">
+          <label for="display-grade">Display Grade as </label>
+        </div>
+        <div class="col-sm-9">
+          <select id="display-grade" class="form-select">
+            <option>Percentage</option>
+          </select>
+        </div>
+
+        <!--Count grades? -->
+        <div class="mb-4"></div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-9">
+            <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  value="grade-option"
+                  name="count-grade"
+                  id="chkbox-grade-count"
+                />
+                <label for="chkbox-grade-count">
+                    Do not count this assignment towards the final grade</label>
+            </div>
+            
+        </div>
+        
+        <!--Submission Type-->
+        <div class="mb-4"></div>
+        <div class="col-sm-3">
+          <label for="submission">Submission Type </label>
+        </div>
+        <div class="col-sm-9">
+          <select id="submission" class="form-select">
+            <option>Online</option>
+          </select>
+        </div>
+        <div class="mb-4"></div>
+
+        <!--Online Entry Options-->
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3">
+            <label for="points">Online Entry Options</label>
+        </div>
+        <div class="col-sm-7">
+            <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  value="text-entry"
+                  name="check-submission"
+                  id="chkbox-text-entry"
+                />
+                <label for="chkbox-text-entry">Text Entry</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  value="web-url"
+                  name="check-submission"
+                  id="chkbox-web-url"
+                />
+                <label for="chkbox-web-url">Website URL</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  value="media-recordings"
+                  name="check-submission"
+                  id="chkbox-media-recordings"
+                />
+                <label for="chkbox-media-recordings">Media Recordings</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  value="student-annotation"
+                  name="check-submission"
+                  id="chkbox-student-annotation"
+                />
+                <label for="chkbox-student-annotation">Student Annotation</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  value="file-upload"
+                  name="check-submission"
+                  id="chkbox-file-upload"
+                />
+                <label for="chkbox-file-upload">File Uploads</label>
+              </div>
+        </div>
+
+        <!--Assign-->
+        <div class="mb-4"></div>
+        <div class="col-sm-3" style="align-items:normal">
+            <label>Assign</label>
+        </div>
+        <div class="col-sm-9">
+            
+                <div style="border: 1px solid #c7cdd1; padding: 0%;" class="form-control">
+                  <div class="form-group mb-4 ms-3 me-3">
+                    <label for="assign-to"><h6><b>Assign to</b></h6></label>
+                    <select class="form-control fa" class="dropdown_box" id="assign-to">
+                            <option selected>
+                                Everyone &#xf00d;</option>
+                                <option>
+                                    Someone &#xf00d;</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4 ms-3 me-3">
+                    <label for="due-date"><h6><b>Due</b></h6></label>
+                    <input type="date" class="form-control" id="due-date">
+                  </div>
+                  <div class="form-group row mb-5 ms-2 me-2">
+                    <div class="col-sm-6">
+                    <label for="available-from"><h6><b>Available from</b></h6></label>
+                    <input type="date" class="form-control" id="available-from">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="until"><h6><b>Until</b></h6></label>
+                        <input type="date" class="form-control" id="until">
+                        </div>
+                  </div>
+                  <div>
+                    <button type="submit" class="btn" style="width: 100%; border-radius: 0%; background-color: #f5f5f5;" >+ Add</button>
+                  </div>
+                  
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-control mt-5" style="border-radius: 0%;">
+        <div class="form-check form-check-inline">
+            <input
+              type="checkbox"
+              value="text-entry"
+              name="check-notify-user"
+              id="chkbox-notify-user"
+            />
+            <label for="chkbox-notify-user">Notify users that this content has changed.</label>
+          </div>
+          <div style="display: flex; text-align: center;">
+            <h5 style="margin-left: auto" class="me-4">
+                <button>
+                <a href="/public/Kanbas/Courses/Assignments/screen.html"> Cancel</a>
+            </button>
+            <button type="button" class="highlighted-button">
+              <a href="/public/Kanbas/Courses/Assignments/screen.html" style="color: white"> Save</a>
+            </button>
+          </div>
+    </div>
+    
+      
+  </body>
 </html>
