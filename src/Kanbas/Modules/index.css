@@ -3,8 +3,6 @@
 }
 .wd-module {
     border-radius: 0%;
-    border: none;
-    margin: 0px;
     padding: 0px;
 }
 .wd-week {
@@ -25,6 +23,7 @@
     text-decoration: none;
     -webkit-user-select: none;
     user-select: none; 
+    border-radius: 5%;
 }
 
 .wd-buttons:hover {
@@ -70,24 +69,10 @@ li {
 #title {
     border-left:  1px solid #c7cdd1;
 }
-form {
-    text-decoration: none;
+select:option:focus {
+    color: green;
 }
-.form-group {
-    border: 1px solid black;
-    border-radius: 5%;
-}
-
-.table-bordered>tbody>tr:nth-child(odd)>td,
-.table-bordered>tbody>tr:nth-child(odd)>th {
-	background-color: white;
-}
- input {
-    border: none;
-    width: max-content;
+.rs-btn-default {
+    border: transparent;
     background-color: transparent;
- }
- input:hover {
-    background-color: white;
- }
-
+}
