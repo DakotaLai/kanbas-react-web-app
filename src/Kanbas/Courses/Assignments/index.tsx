@@ -55,8 +55,7 @@ function Assignments() {
           <div style={{ borderLeft: '10px solid green' }} className="list-group-item">
             <li>
               <FaEllipsisV className="me-2" />
-              <Link
-                to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}>{assignment.title}</Link>
+              {assignment.title}
               <span className="float-end">
                 <FaCheckCircle className="text-success" /><FaEllipsisV className="ms-2" />
                 <Link

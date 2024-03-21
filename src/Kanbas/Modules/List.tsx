@@ -89,18 +89,17 @@ function ModuleList() {
       <hr className="ms-5 me-5" />
       <ul className="list-group wd-modules ms-5 me-5">
         <li className="list-group-item">
-          <button onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
-          <button onClick={() => dispatch(updateModule({ ...module, course: courseId }))}>
-            Update
-          </button>
-
-          <input value={module.name}
+          <input className="form-control"  value={module.name}
             onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}
           />
-          <textarea value={module.description}
+          <textarea className="form-control"  value={module.description}
             onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))
             }
           />
+          <button onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
+          <button  onClick={() => dispatch(updateModule({ ...module, course: courseId }))}>
+            Update
+          </button>
         </li>
       </ul>
       {moduleList.filter((module) => module.course === courseId)
